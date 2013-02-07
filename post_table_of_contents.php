@@ -9,7 +9,9 @@ Version: 0.1
 */
 ?>
 <?php 
-wp_enqueue_script( $handle = 'post_table_of_contents', $src = plugins_url('/lib/js/post_table_of_contents.js', __FILE__), $deps = array('jquery'), $ver = false, $in_footer = true );
+  if(is_single()) {
+    wp_enqueue_script( $handle = 'post_table_of_contents', $src = plugins_url('/lib/js/post_table_of_contents.js', __FILE__), $deps = array('jquery'), $ver = false, $in_footer = true );
 
-wp_enqueue_style( $handle = 'post_table_of_contents', $src = plugins_url('/lib/css/post_table_of_contents.css', __FILE__), $deps = array(), $ver = false, $media = 'all' )
+    wp_enqueue_style( $handle = 'post_table_of_contents', $src = plugins_url('/lib/css/post_table_of_contents.css', __FILE__), $deps = array(), $ver = false, $media = 'all' );
+  }
 ?>
