@@ -1,4 +1,4 @@
 wordpress-post-table-of-contents
 =========================================
 
-Plugin to generate a jQuery-based table of contents from the heading tags (h1 - h6) within the body of a post.
+WordPress Plugin to generate a jQuery-based table of contents based on heading tags within the body of a post (h1 to h6)
